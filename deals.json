@@ -1,14 +1,5 @@
 [
   {
-    "asin": "B0CQXKBL6H",
-    "title": "Waterproof Marble Tiles Wall Panels – Peel and Stick Tile",
-    "category": "Home Improvement",
-    "image": "https://placehold.co/600x400/002a33/00ffcc?text=Wall+Tiles",
-    "site": "https://www.amazon.com/dp/B0CQXKBL6H?tag=tntdesigns338-20",
-    "note": "🧱 Self-Adhesive Backsplash Tile for Bathroom or Kitchen"
-  },
-  {
-    "asin": "B0C5JXWF23",
     "title": "Wireless Bluetooth Earbuds – Neon Sound Pro",
     "category": "Audio",
     "image": "https://placehold.co/600x400/003f55/00ffcc?text=Earbuds",
@@ -16,11 +7,10 @@
     "note": "🎧 35% OFF — noise canceling + charging case"
   },
   {
-    "asin": "B0B8MZY6R2",
     "title": "LED Light Strip Kit – 32 ft Smart RGB",
     "category": "Home",
     "image": "https://placehold.co/600x400/001f26/00ffcc?text=LED+Lights",
     "site": "https://www.amazon.com/dp/B0B8MZY6R2?tag=tntdesigns338-20",
-    "note": "💡 20% OFF — voice control + app sync"
+    "note": "💡 Voice control + app sync"
   }
 ]
