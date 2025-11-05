@@ -3,21 +3,66 @@
 <head>
 <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
-<title>TnTDesigns ⚡ Deals</title>
+<title>TnTDesigns ⚡ Amazon Deals</title>
 <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500;700&family=Inter:wght@400;600&display=swap" rel="stylesheet">
 <script src="https://cdn.tailwindcss.com"></script>
 <style>
-html {font-family:'Inter',sans-serif;background:#000;color:#e0fefc;transition:background .4s,color .4s;}
-h1,h2,h3{font-family:'Orbitron',sans-serif;letter-spacing:0.03em;}
-.neon-text{background:linear-gradient(90deg,#00ffff,#00ff88);-webkit-background-clip:text;-webkit-text-fill-color:transparent;text-shadow:0 0 10px #00ffee88,0 0 20px #00ff8888;}
-.glass{background:rgba(0,15,20,0.6);backdrop-filter:blur(10px);border:1px solid rgba(0,255,200,0.2);box-shadow:0 0 15px rgba(0,255,200,0.1);}
-.btn-neon{background:linear-gradient(90deg,#00ffcc,#0099ff);color:black;font-weight:600;border-radius:1rem;box-shadow:0 0 15px rgba(0,255,200,0.5);transition:all .25s ease;}
-.btn-neon:hover{transform:scale(1.05);box-shadow:0 0 25px rgba(0,255,200,0.9);}
-input,select{background:rgba(0,0,0,0.4);border:1px solid rgba(0,255,200,0.2);border-radius:.75rem;color:#ccffee;padding:.5rem 1rem;}
-input:focus,select:focus{outline:none;border-color:#00ffee;}
-body.light{background:#f6f6f6;color:#022;}
-body.light .glass{background:rgba(255,255,255,0.7);border-color:rgba(0,200,255,0.2);}
-body.light .neon-text{-webkit-text-fill-color:initial;color:#0099aa;text-shadow:none;}
+html {
+  font-family: 'Inter', sans-serif;
+  background: #000;
+  color: #e0fefc;
+  transition: background .4s, color .4s;
+}
+h1,h2,h3 {
+  font-family: 'Orbitron', sans-serif;
+  letter-spacing: 0.03em;
+}
+.neon-text {
+  background: linear-gradient(90deg,#00ffff,#00ff88);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-shadow: 0 0 10px #00ffee88,0 0 20px #00ff8888;
+}
+.glass {
+  background: rgba(0,15,20,0.6);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(0,255,200,0.2);
+  box-shadow: 0 0 15px rgba(0,255,200,0.1);
+  border-radius: 1rem;
+}
+.btn-neon {
+  background: linear-gradient(90deg,#00ffcc,#0099ff);
+  color: black;
+  font-weight: 600;
+  border-radius: 1rem;
+  box-shadow: 0 0 15px rgba(0,255,200,0.5);
+  transition: all .25s ease;
+}
+.btn-neon:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 25px rgba(0,255,200,0.9);
+}
+input,select {
+  background: rgba(0,0,0,0.4);
+  border: 1px solid rgba(0,255,200,0.2);
+  border-radius: .75rem;
+  color: #ccffee;
+  padding: .5rem 1rem;
+}
+input:focus,select:focus {outline: none; border-color: #00ffee;}
+body.light {background: #f6f6f6; color: #022;}
+body.light .glass {background: rgba(255,255,255,0.7); border-color: rgba(0,200,255,0.2);}
+body.light .neon-text {-webkit-text-fill-color: initial; color: #0099aa; text-shadow: none;}
+.amazon-badge {
+  display: inline-flex; align-items: center; gap: .3rem;
+  background: #ff9900; color: #111;
+  border-radius: .5rem; padding: .25rem .75rem;
+  font-weight: 700; font-size: .85rem;
+  box-shadow: 0 0 10px rgba(255,153,0,.5);
+  transition: all .25s ease;
+}
+.amazon-badge:hover {background: #ffb84d; transform: scale(1.05);}
+.card:hover {transform: translateY(-4px); box-shadow: 0 0 25px #00ffcc44;}
 </style>
 </head>
 <body class="min-h-screen flex flex-col">
@@ -28,21 +73,21 @@ body.light .neon-text{-webkit-text-fill-color:initial;color:#0099aa;text-shadow:
     <button id="themeToggle" class="btn-neon px-3 py-1">Toggle Theme</button>
     <nav class="flex gap-3">
       <a href="#deals" class="hover:underline text-cyan-300">Deals</a>
-      <a href="#how" class="hover:underline text-cyan-300">About</a>
+      <a href="#about" class="hover:underline text-cyan-300">About</a>
     </nav>
   </div>
 </header>
 
-<section class="max-w-6xl mx-auto w-full mt-10 px-4 grid md:grid-cols-3 gap-8">
-  <div class="md:col-span-3 glass rounded-2xl p-6">
-    <h2 class="text-xl font-bold text-cyan-300">🎯 Find Your Deals</h2>
-    <div class="mt-4 flex flex-col sm:flex-row flex-wrap gap-4">
+<section class="max-w-6xl mx-auto w-full mt-10 px-4">
+  <div class="glass p-6">
+    <h2 class="text-xl font-bold text-cyan-300 mb-4">🎯 Find Your Deals</h2>
+    <div class="flex flex-col sm:flex-row flex-wrap gap-4">
       <input id="search" type="search" placeholder="Search by name..." class="flex-1">
       <select id="category" class="w-40"><option value="">All Categories</option></select>
       <select id="sort" class="w-40">
         <option value="">Sort By</option>
-        <option value="az">Name A-Z</option>
-        <option value="za">Name Z-A</option>
+        <option value="az">Name A–Z</option>
+        <option value="za">Name Z–A</option>
         <option value="cat">Category</option>
       </select>
       <button id="clear" class="btn-neon px-4 py-2">Clear</button>
@@ -51,35 +96,35 @@ body.light .neon-text{-webkit-text-fill-color:initial;color:#0099aa;text-shadow:
 </section>
 
 <section id="deals" class="max-w-6xl mx-auto px-4 mt-10 mb-20">
-  <div class="glass rounded-2xl p-6">
-    <h2 class="text-2xl neon-text mb-4">🔥 Daily Amazon Deals</h2>
+  <div class="glass p-6">
+    <h2 class="text-2xl neon-text mb-6 text-center">🔥 Daily Amazon Deals</h2>
     <div id="autoDeals" class="grid sm:grid-cols-2 lg:grid-cols-3 gap-6"></div>
   </div>
 </section>
 
-<section id="how" class="max-w-6xl mx-auto px-4 mb-10">
-  <div class="glass rounded-2xl p-6 text-sm text-cyan-100/80">
-    <strong>Disclosure:</strong> As an Amazon Associate I earn from qualifying purchases.
+<section id="about" class="max-w-6xl mx-auto px-4 mb-10">
+  <div class="glass p-6 text-sm text-cyan-100/80 leading-relaxed">
+    <strong>About TnTDesigns:</strong> Your trusted source for stylish, tech-savvy, and home-improvement deals.  
+    Every product listed here is verified through Amazon’s Associate Program to ensure reliability and authenticity.
   </div>
 </section>
 
-<footer class="max-w-6xl mx-auto px-4 mb-10 text-xs text-cyan-300/70">
+<footer class="max-w-6xl mx-auto px-4 mb-10 text-xs text-cyan-300/70 text-center space-y-2">
+  <p>Disclosure: As an Amazon Associate, I earn from qualifying purchases. Sponsored by Amazon.</p>
   <p>© <span id="yr"></span> TnTDesigns • Affiliate disclosure present on this page.</p>
 </footer>
 
 <script>
-const TAG="tntdesigns338-20";
-document.getElementById("yr").textContent=new Date().getFullYear();
-let deals=[];
+const TAG = "tntdesigns338-20";
+document.getElementById("yr").textContent = new Date().getFullYear();
+let deals = [];
 
 async function loadDeals(){
   let res;
-  try{
-    // Try local first
+  try {
     res = await fetch("deals.json?v=" + Date.now());
     if(!res.ok) throw new Error("Local deals not found");
-  }catch(e){
-    // Fallback to GitHub Pages
+  } catch(e) {
     res = await fetch("https://tntdesigns338.github.io/tntdesigns-site/deals.json?v=" + Date.now());
   }
   deals = await res.json();
@@ -88,26 +133,38 @@ async function loadDeals(){
 }
 
 function fillCategories(){
-  const c=[...new Set(deals.map(p=>p.category))];
-  const s=document.getElementById("category");
-  s.innerHTML='<option value="">All Categories</option>';
+  const c = [...new Set(deals.map(p=>p.category))];
+  const s = document.getElementById("category");
+  s.innerHTML = '<option value="">All Categories</option>';
   c.forEach(x=>{
-    const o=document.createElement("option");
-    o.value=x;o.textContent=x;s.appendChild(o);
+    const o = document.createElement("option");
+    o.value=x; o.textContent=x; s.appendChild(o);
   });
 }
 
 function renderDeals(list){
-  const box=document.getElementById("autoDeals");
-  if(list.length===0){box.innerHTML=`<p class='text-cyan-400/70'>No deals found.</p>`;return;}
-  box.innerHTML=list.map(p=>`
-    <article class="glass rounded-2xl overflow-hidden hover:shadow-[0_0_20px_#00ffcc55] transition">
+  const box = document.getElementById("autoDeals");
+  if(list.length===0){
+    box.innerHTML = `<p class='text-cyan-400/70'>No deals found.</p>`;
+    return;
+  }
+  box.innerHTML = list.map(p=>`
+    <article class="glass card rounded-2xl overflow-hidden transition-all">
       <img src="${p.image}" class="w-full h-48 object-cover" alt="${p.title}">
-      <div class="p-4">
-        <h3 class="text-lg font-bold text-cyan-300">${p.title}</h3>
-        <p class="text-sm text-cyan-200/80">${p.note||""}</p>
-        <p class="text-xs text-cyan-400/70 uppercase">${p.category} • PAID LINK</p>
-        <a href="${p.site || `https://www.amazon.com/dp/${p.asin}?tag=${TAG}`}" target="_blank" rel="nofollow noopener" class="btn-neon inline-block mt-3 px-4 py-2">View Deal</a>
+      <div class="p-4 flex flex-col justify-between h-full">
+        <div>
+          <h3 class="text-lg font-bold text-cyan-300 mb-1">${p.title}</h3>
+          <p class="text-sm text-cyan-200/80 mb-1">${p.note||""}</p>
+          <p class="text-xs text-cyan-400/70 uppercase">${p.category} • PAID LINK</p>
+        </div>
+        <div class="mt-3">
+          <a href="${p.site || `https://www.amazon.com/dp/${p.asin}?tag=${TAG}`}" target="_blank" rel="nofollow noopener" class="btn-neon inline-block mt-2 px-4 py-2 text-sm">View Deal</a>
+          <div class="mt-3">
+            <a href="${p.site || `https://www.amazon.com/dp/${p.asin}?tag=${TAG}`}" target="_blank" rel="nofollow noopener" class="amazon-badge">
+              <img src="https://upload.wikimedia.org/wikipedia/commons/a/a9/Amazon_logo.svg" alt="Amazon" width="55"> Buy on Amazon
+            </a>
+          </div>
+        </div>
       </div>
     </article>
   `).join("");
