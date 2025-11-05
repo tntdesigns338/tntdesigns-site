@@ -73,7 +73,7 @@ document.getElementById("yr").textContent=new Date().getFullYear();
 let deals=[];
 
 async function load(){
- const r=await fetch("deals.json");deals=await r.json();
+ const res = await fetch("deals.json?v=" + Date.now());deals=await r.json();
  fillCats();render(deals);
 }
 function fillCats(){
