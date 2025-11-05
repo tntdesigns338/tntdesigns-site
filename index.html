@@ -107,7 +107,7 @@ function renderDeals(list){
         <h3 class="text-lg font-bold text-cyan-300">${p.title}</h3>
         <p class="text-sm text-cyan-200/80">${p.note||""}</p>
         <p class="text-xs text-cyan-400/70 uppercase">${p.category} • PAID LINK</p>
-        <a href="https://www.amazon.com/dp/${p.asin}?tag=${TAG}" target="_blank" rel="nofollow noopener" class="btn-neon inline-block mt-3 px-4 py-2">View Deal</a>
+        <a href="${p.site || `https://www.amazon.com/dp/${p.asin}?tag=${TAG}`}" target="_blank" rel="nofollow noopener" class="btn-neon inline-block mt-3 px-4 py-2">View Deal</a>
       </div>
     </article>
   `).join("");
