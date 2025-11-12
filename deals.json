@@ -1,16 +1,44 @@
 [
   {
+    "asin": "B0CQXKBL6H",
+    "title": "RGB Mechanical Keyboard – Electric Blue Edition",
+    "category": "Gaming",
+    "image": "https://placehold.co/600x400/002a33/00ffcc?text=RGB+Keyboard",
+    "note": "🔥 25% OFF — custom switches + under-glow lighting"
+  },
+  {
+    "asin": "B0C5JXWF23",
     "title": "Wireless Bluetooth Earbuds – Neon Sound Pro",
     "category": "Audio",
     "image": "https://placehold.co/600x400/003f55/00ffcc?text=Earbuds",
-    "site": "https://www.amazon.com/dp/B0C5JXWF23?tag=tntdesigns338-20",
-    "note": "🎧 35% OFF — noise canceling + charging case"
+    "note": "⚡ 35% OFF — noise canceling + charging case"
   },
   {
-    "title": "LED Light Strip Kit – 32 ft Smart RGB",
+    "asin": "B0B8MZY6R2",
+    "title": "LED Light Strip Kit – 32ft Smart RGB",
     "category": "Home",
     "image": "https://placehold.co/600x400/001f26/00ffcc?text=LED+Lights",
-    "site": "https://www.amazon.com/dp/B0B8MZY6R2?tag=tntdesigns338-20",
-    "note": "💡 Voice control + app sync"
+    "note": "💡 20% OFF — voice control + app sync"
+  },
+  {
+    "asin": "B0BNY2G3XL",
+    "title": "USB-C Power Bank 20000mAh – QuickCharge",
+    "category": "Tech",
+    "image": "https://placehold.co/600x400/002f44/00ffcc?text=Power+Bank",
+    "note": "🔋 30% OFF — high-capacity fast charge"
+  },
+  {
+    "asin": "B0C9D4RHTK",
+    "title": "Gaming Mouse Pad XL – RGB Edge Glow",
+    "category": "Gaming",
+    "image": "https://placehold.co/600x400/003a4a/00ffcc?text=Mouse+Pad",
+    "note": "✨ 40% OFF — non-slip neon base"
+  },
+  {
+    "asin": "B0C7ZL8R9A",
+    "title": "Desk LED Lamp – Adjustable Color Temp",
+    "category": "Office",
+    "image": "https://placehold.co/600x400/004a55/00ffcc?text=LED+Lamp",
+    "note": "💚 22% OFF — eye-safe & USB powered"
   }
 ]
